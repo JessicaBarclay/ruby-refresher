@@ -131,7 +131,7 @@ describe 'the Friday test :)' do
     expect(n).to eq({ 'b' => 'a', 'd' => 'c' })
   end
 
-  fit 'add_together_keys_and_values' do
+  it 'add_together_keys_and_values' do
     n = add_together_keys_and_values({ 1 => 1, 2 => 2 })
     expect(n).to eq 6
   end
@@ -141,12 +141,12 @@ describe 'the Friday test :)' do
     expect(n).to eq 'ello ohnoe'
   end
 
-  it 'round_up_number' do
+  fit 'round_up_number' do
     n = round_up_number 3.142
     expect(n).to eq 4
   end
 
-  it 'round_down_number' do
+  fit 'round_down_number' do
     n = round_down_number 4.9
     expect(n).to eq 4
   end
