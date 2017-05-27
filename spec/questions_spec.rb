@@ -156,7 +156,7 @@ describe 'the Friday test :)' do
     expect(n).to eq '31/10/2013'
   end
 
-  fit 'get_domain_name_from_email_address' do
+  it 'get_domain_name_from_email_address' do
     n = get_domain_name_from_email_address 'alex@makersacademy.com'
     expect(n).to eq 'makersacademy'
   end
@@ -187,7 +187,7 @@ describe 'the Friday test :)' do
     expect(b).to be true
   end
 
-  fit 'square_root_of' do
+  it 'square_root_of' do
     a = square_root_of 9
     b = square_root_of 3
     expect(a).to eq 3.0
